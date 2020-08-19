@@ -1,7 +1,7 @@
-# AW3ARDS
+# AWARDSCLONE..
 
 ### Created By
-### [Duncan Kiragu](https://github.com/Duncan-Kiragu)
+### [Mishael Ndegwa](https://github.com/mishael254)
 
 
 ## Description
@@ -37,7 +37,7 @@ Users can be able to:
 ## Getting Started
 ### Clone the Repo
 Run the following command on the terminal:
-`git clone https://github.com/Duncan-Kiragu/AW3ARDS.git && cd AW3ARDS`
+`git clone https://github.com/mishael254/awardsclone.git && cd awardsclone`
 
 ### Activate virtual environment
 Activate virtual environment using python3.8 as default interpreter
@@ -86,7 +86,7 @@ Create .env file and paste paste the following filling where appropriate:
 ```
         $ python3.8 manage.py runserver
 ```
-Open terminal on `localhost:8000`
+Open terminal on `http://127.0.0.1:8000/`
         
 
 ### Prerequisites
@@ -106,14 +106,10 @@ Open terminal on `localhost:8000`
 ```
 
 
-## Deploying to heroku
-Refer to this guide: [deploying to heroku](https://simpleisbetterthancomplex.com/tutorial/2016/08/09/how-to-deploy-django-applications-on-heroku.html)
-
-Set the configuration to production mode
 
 ## Live Demo
 
-The web app can be accessed from the following link: https://aw3ards.herokuapp.com/
+The web app can be accessed from the following link: []
 
 ## Built With
 * Python
@@ -129,7 +125,7 @@ The web app can be accessed from the following link: https://aw3ards.herokuapp.c
 
 
 ### License
-Copyright (c) [2020] [AW3ARDS] Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Copyright (c) [2020] [awardsclone] Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
