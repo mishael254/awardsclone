@@ -8,6 +8,8 @@
 This is a Django website that allows a user to post a project he/she has created and get it reviewed by his/her peers.A project can be rated based on 3 different Criteria Design,
 Usability and Content
  
+ #### [Link to live site]()
+
 ## User features:
 
 Users can be able to:
