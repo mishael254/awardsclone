@@ -1,0 +1,37 @@
+{%extends "django_registration/base.html"%}
+{% load crispy_forms_tags %}
+{% load bootstrap4 %}
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4 text-center" id="form" style="color: white;
+    font-family: sans-serif;margin-top: 20px;background: transparent" >
+        <h2 style="border-bottom:6px solid #4DD0E1;margin-bottom: 10px;padding: 10px;">| SIGN UP |</h2><br>
+        <form action="/accounts/register/" method="POST" style="color:#97757500;" class="login-box">
+            {% csrf_token %}
+            {% bootstrap_form form layout='inline' %}
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-outline-info btn-rounded waves-effect text-center" value="| Sign Up |"
+                    style="text-align:center;">
+            </div>
+            <input type="hidden" name="next" value="{{next}}">
+        </form>
+        <div class="panel panel-default text-center">
+            <hr>
+            <h6 class="text-center  white-text text-muted">Have an account?</h6>
+            <a href="/accounts/login/" class="btn btn-outline-success btn-md text-center sm">| Log In Here |</a>
+
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+</div>
+</div>
+
+
+
+
+{% endblock %}
