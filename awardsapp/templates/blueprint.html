@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>| AW3ARDS |</title>
+  <title>AWARDS-MINI CLONE</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="{% static 'css/layout.css' %}">
@@ -60,7 +60,7 @@
 	<header class="cd-header">
 		<div class="header-wrapper">
 			<div class="logo-wrap">
-				<a href="#" class="hover-target"><span>AW3</span>ARDS</a>
+				<a href="#" class="hover-target"><span>AWARDS</span>MINI</a>
 			</div>
 			<div class="nav-but-wrap">
 				<div class="menu-icon hover-target">
@@ -75,13 +75,13 @@
 	<div class="nav">
 		<div class="nav__content">
 			<ul class="nav__list">
-				<li class="nav__list-item active-nav"><a href="{% url 'home' %}" class="hover-target">HOME</a></li>
-        <li class="nav__list-item"><a href="{% url 'profile' username=user %}"  class="hover-target">PROFILE</a></li>
+				<li class="nav__list-item active-nav"><a href="{% url 'home' %}" class="hover-target">home</a></li>
+        <li class="nav__list-item"><a href="{% url 'profile' username=user %}"  class="hover-target">your profile</a></li>
         {% if user.is_authenticated %}
         <li class="nav__list-item"><a href="/logout/" class="hover-target">LOG OUT</a></li>
-        <li class="nav__list-item"><a href="{% url 'uploadproject' %}" class="hover-target">SUBMIT SITE</a></li>
+        <li class="nav__list-item"><a href="{% url 'uploadproject' %}" class="hover-target">submit</a></li>
         {% else %}
-        <li class="nav__list-item"><a href="/accounts/login" class="hover-target">LOG IN</a></li>
+        <li class="nav__list-item"><a href="/accounts/login" class="hover-target">log in</a></li>
         {% endif %}
 				<li class="nav__list-item"><a href="#" data-toggle="modal" data-target="#modalSubscriptionForm" class="hover-target">SUBSCRIBE</a></li>
 			</ul>
@@ -162,14 +162,14 @@
 </div>
 <div class="col-md-6 mb-4">
     <div class="input-group-append">
-      <button class="btn btn-sm btn-outline-white my-0" type="button"><a href="/accounts/register/">| SIGN UP |</a></button>
+      <button class="btn btn-sm btn-outline-white my-0" type="button"><a href="/accounts/register/"><em>sign up here</em></a></button>
     </div>
 
 </div>
 </div>
 </div>
 <div class="footer-copyright text-center text-lg">© 2020 Copyright:
-<a href="https://github.com/Duncan-Kiragu"> DUNCAN KIRAGU</a>
+<a href="https://github.com/mishael254">mishael254</a>
 </div>
 </footer>
 
