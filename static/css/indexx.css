@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body{
+    background-image: url('css/images/images.jpeg');
+}
 .intro{
  background-image: url('https://i.ytimg.com/vi/6HFzJecoMuw/maxresdefault.jpg');
  background-size: cover;
@@ -32,6 +35,7 @@
  background:  #00ACC1;
  color: white;
  cursor: pointer;
+}
  
 
 .search {
@@ -76,4 +80,3 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
  
-}
