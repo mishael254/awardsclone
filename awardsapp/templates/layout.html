@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><em>|AWARDS-CLONE|</em></title>
+  <title>AWARDS-CLONE</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="{% static 'css/layout.css' %}">
@@ -93,7 +93,7 @@
 	<header class="cd-header">
 		<div class="header-wrapper">
 			<div class="logo-wrap">
-				<a href="#" class="hover-target"><span>AW3</span>ARDS</a>
+				<a href="#" class="hover-target"><span>AWARDS</span>MINI</a>
 			</div>
 			<div class="nav-but-wrap">
 				<div class="menu-icon hover-target">
@@ -108,15 +108,15 @@
 	<div class="nav">
 		<div class="nav__content">
 			<ul class="nav__list">
-				<li class="nav__list-item active-nav"><a href="{% url 'home' %}" class="hover-target">HOME</a></li>
-        <li class="nav__list-item"><a href="{% url 'profile' username=user %}"  class="hover-target">PROFILE</a></li>
+				<li class="nav__list-item active-nav"><a href="{% url 'home' %}" class="hover-target"><em>home</em></a></li>
+        <li class="nav__list-item"><a href="{% url 'profile' username=user %}"  class="hover-target"><em>your profile</em></a></li>
         {% if user.is_authenticated %}
-        <li class="nav__list-item"><a href="/accounts/login/" class="hover-target">LOG OUT</a></li>
-        <li class="nav__list-item"><a href="{% url 'uploadproject' %}" class="hover-target">SUBMIT SITE</a></li>
+        <li class="nav__list-item"><a href="/accounts/login/" class="hover-target"><em>log in</em></a></li>
+        <li class="nav__list-item"><a href="{% url 'uploadproject' %}" class="hover-target"><em>project submitions</em></a></li>
         {% else %}
-        <li class="nav__list-item"><a href="accounts/login/" class="hover-target">LOG IN</a></li>
+        <li class="nav__list-item"><a href="accounts/login/" class="hover-target"><em>log in</em></a></li>
         {% endif %}
-				<li class="nav__list-item"><a href="#" data-toggle="modal" data-target="#modalSubscriptionForm" class="hover-target">SUBSCRIBE</a></li>
+				<li class="nav__list-item"><a href="#" data-toggle="modal" data-target="#modalSubscriptionForm" class="hover-target">try subscriptions</a></li>
         
        <form action="{% url 'search_results' %}" role="search" >
           <input type="search" class="text-dark">
@@ -130,16 +130,15 @@
 	<div class='cursor' id="cursor"></div>
 	<div class='cursor2' id="cursor2"></div>
   <div class='cursor3' id="cursor3"></div>
-<br><br><br><br>
   <div class="card text-lg" style="background-color: transparent;font-size: 30px; ">
-    <div class="card-header text-center text-info" style="outline: double;">
-     | AW3ARDS |
+    <div class="card-header text-center text-info" style="font-stretch: expanded;">
+     <em>welcome to awards-mini clone</em>
     </div>
     <div class="card-body text-lg">
       <blockquote class="blockquote mb-0 text-lg text-center">
-        <p style="font-size: 30px;" class="text-center">“when you don't create things, you become defined by your tastes rather than ability. your tastes only narrow & exclude people. so create.”</p>
-        <footer class="blockquote-footer teal-text">Stated by <cite title="Source Title">Duncan Kiragu</cite></footer>
-        <p style="font-size: 30px;" class="text-center">“Coding is art :Discover, recognize, and rate the artistic talent of our web developers..”</p>
+        <p style="font-style: italic" class="text-center">“The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly. A programmer is ideally an essayist who works with traditional aesthetic and literary forms as well as mathematical concepts, to communicate the way that an algorithm works and to convince a reader that the results will be correct.”</p>
+        <footer class="blockquote-footer teal-text">Stated by <cite title="Source Title">mishael ndegwa</cite></footer>
+        <p style="font-style: italic;" class="text-center">“I'm not a great programmer; I'm just a good programmer with great habits.”</p>
       </blockquote>
     </div>
   </div>
@@ -198,10 +197,10 @@
 
 
 
-  <div class="footer"  style="outline: double;">
+  <div class="footer"  style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
 
     <div class="footer-copyright text-center text-lg">© 2020 :
-    <a class="text-info" href="https://github.com/Duncan-Kiragu">| AW3ARDS |</a>
+    <a class="text-info" href="https://github.com/Duncan-Kiragu">AWARDS-MINI CLONE</a>
     </div>
 
     <div class="dropdown dropleft text-lg" style="display: flex; justify-content: center;">
