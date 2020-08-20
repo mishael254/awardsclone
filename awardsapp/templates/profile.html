@@ -8,7 +8,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title><em>Awards Clone Mini</em></title>
+        <title>Awards Clone Mini</title>
         <link rel="stylesheet" href="{% static 'css/layout.css' %}">
         <link rel="stylesheet" href="{% static 'css/indexx.css' %}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,10 +41,10 @@
             <div class="row top-section">
                 <div class="profile-image">
 
-                    <img src="{{profile_details.profile_photo.url}}" alt="profile-photo" width="150" height="150" style="margin-top:10px;outline: double;"><br><br>
+                    <img src="{{profile_details.profile_photo.url}}" alt="profile-photo" width="150" height="150" style="margin-top:10px;"><br><br>
 
 
-                    <h4 class=" text-center" style="outline: double;"><strong>{{ profile.username }}</strong></h4>
+                    <h4 class=" text-center" style="font: italic;"><strong>{{ profile.username }}</strong></h4>
                 </div>
                 <div >
 
@@ -80,9 +80,9 @@
     <p class="text-info">{{profile.email}}</p>
 
     </div>
-    <hr style="border-width: 5px;background-color: turquoise;">
-    <h2 style="text-align: center;border-bottom: turquoise 4px;outline: double;">| All Posts |</h2>
-        <hr style="border-width: 5px;background-color: turquoise;">
+    
+    <h2 style="text-align: center;border-bottom: rgb(216, 66, 29) 4px;font: outline;"><em>all posts</em></h2>
+       <hr> 
     <div class="row user-images">
         {% for project in projects %}
         <div class="col-md-4">
@@ -99,13 +99,11 @@
 
         {% empty %}
         <div class="col-md-12">
-            <h2> No websites posted Yet</h2>
+            <h2><strong><em>no websites posted at the moment</em></strong></h2>
         </div>
         {% endfor %}
     </div>
 </div>
-
-<!-- Created modal class similar to instagram toggle for logout  -->
 
 <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
@@ -113,9 +111,9 @@
         <div class="modal-content">
             <div class="modal-body text-dark">
                 <ul class="list-group">
-                    <li class="list-group-item text-center" data-toggle="modal" data-target=".bd-example-modal-md"><strong>| Edit Profile |</strong></li>
-                    <li class="list-group-item text-center"><a href="{% url 'logout' %}">| Log Out |</a></li>
-                    <li class="list-group-item text-center"><a data-dismiss="modal">| Cancel |</a></li>
+                    <li class="list-group-item text-center" data-toggle="modal" data-target=".bd-example-modal-md"><strong><em>edit your profile</em></strong></li>
+                    <li class="list-group-item text-center"><a href="{% url 'logout' %}"><em>log out</em></a></li>
+                    <li class="list-group-item text-center"><a data-dismiss="modal"><em>cancel</em></a></li>
                 </ul>
             </div>
         </div>
@@ -124,11 +122,11 @@
 <div class="modal fade bd-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-md text-dark">
         <div class="modal-content"><br>
-            <p class="text-center text-info">Edit Profile</p>
+            <p class="text-center text-info"><em>edit your profile here</em></p>
             <form action="" method="post" novalidate enctype="multipart/form-data" class="mr-4 mt-4 ml-4 mb-4">
                 {% csrf_token%}
                 {{ form|crispy }}
-                <button type="submit" class="btn btn-outline-info btn-lg">| Update Profile |</button>
+                <button type="submit" class="btn btn-outline-info btn-lg">profile update</button>
             </form>
         </div>
     </div>
