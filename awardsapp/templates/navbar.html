@@ -5,7 +5,7 @@
 <header class="cd-header">
   <div class="header-wrapper">
     <div class="logo-wrap">
-      <a href="{% url 'home' %}" class="hover-target"><span>AW3</span>ARDS</a>
+      <a href="{% url 'home' %}" class="hover-target"><span>AWARDS</span>MINI</a>
     </div>
     <div class="nav-but-wrap">
       <div class="menu-icon hover-target">
@@ -21,16 +21,16 @@
 <div class="nav">
   <div class="nav__content">
     <ul class="nav__list">
-      <li class="nav__list-item active-nav"><a href="{% url 'home' %}" class="hover-target">HOME</a></li>
-      <li class="nav__list-item"><a href="{% url 'profile' username=user %}" class="hover-target">PROFILE</a></li>
+      <li class="nav__list-item active-nav"><a href="{% url 'home' %}" class="hover-target"><em>home</em></a></li>
+      <li class="nav__list-item"><a href="{% url 'profile' username=user %}" class="hover-target"><em>your profile</em></a></li>
       {% if user.is_authenticated %}
-      <li class="nav__list-item"><a href="accounts/logout/" class="hover-target">LOG OUT</a></li>
-      <li class="nav__list-item"><a href="{% url 'uploadproject' %}" class="hover-target">SUBMIT SITE</a></li>
-      <li class="nav__list-item"><a href="/admin" class="hover-target">ADMIN</a></li>
+      <li class="nav__list-item"><a href="accounts/logout/" class="hover-target"><em>log out</em></a></li>
+      <li class="nav__list-item"><a href="{% url 'uploadproject' %}" class="hover-target"><em>project add</em></a></li>
+      <li class="nav__list-item"><a href="/admin" class="hover-target"><em>admin</em></a></li>
       {% else %}
-      <li class="nav__list-item"><a href="/accounts/login" class="hover-target">LOG IN</a></li>
+      <li class="nav__list-item"><a href="/accounts/login" class="hover-target"><em>log in</em></a></li>
       {% endif %}
-      <li class="nav__list-item"><a href="#" data-toggle="modal" data-target="#modalSubscriptionForm" class="hover-target">SUBSCRIBE</a></li>
+      <li class="nav__list-item"><a href="#" data-toggle="modal" data-target="#modalSubscriptionForm" class="hover-target"><em>try subscriptions</em></a></li>
     </ul>
   </div>
 </div>		
